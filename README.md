@@ -1,7 +1,7 @@
 # churn_prediction
 
 ## İş Problemi
-Şirketi terk edecek müşterileri tahmin 
+Bir telekom şirketinde şirketi terk edecek müşterileri tahmin 
 edebilecek bir makine öğrenmesi modeli 
 geliştirilmesi beklenmektedir.
 
@@ -14,13 +14,13 @@ Bağımlı değişken müşteri terk durumunu ifade etmektedir.
 - year, month → Verinin ait olduğu yıl ve ay.
 - user_account_id → Kullanıcı kimliği (muhtemelen anonimleştirilmiş).
 - user_lifetime → Kullanıcının sisteme kayıt olduğu günden itibaren geçen süre.
-- user_intake → Kullanıcının başlangıç paketi, kampanya veya promosyon gibi bilgileri içerebilir.
+- user_intake → Kullanıcının başlangıç paketi, kampanya veya promosyon gibi bilgileri içerir.
   
 - user_no_outgoing_activity_in_days → Kullanıcının kaç gündür hiçbir giden aktivitesinin (çağrı, SMS vb.) olmadığı.
 - user_account_balance_last → Kullanıcının en son hesap bakiyesi.
 - user_spendings → Toplam harcamalar.
 
-- user_has_outgoing_calls → Kullanıcının giden çağrısı olup olmadığı (muhtemelen 0 veya 1).
+- user_has_outgoing_calls → Kullanıcının giden çağrısı olup olmadığı.
 - calls_outgoing_count → Yapılan toplam çağrı sayısı.
 - calls_outgoing_spendings → Giden çağrılar için harcanan toplam ücret.
 - calls_outgoing_duration → Giden çağrıların toplam süresi.
@@ -29,10 +29,10 @@ Bağımlı değişken müşteri terk durumunu ifade etmektedir.
 - calls_outgoing_inactive_days → Kullanıcının en son giden çağrısından bu yana geçen gün sayısı.
 
 - calls_outgoing_to_onnet_count/spendings/duration/inactive_days → Aynı operatör içi giden çağrıların sayısı, harcaması, süresi, en son yapılan çağrıdan bu yana geçen gün.
-- calls_outgoing_to_offnet_count/spendings/duration/inactive_days → Farklı operatörlere yapılan çağrılar için benzer bilgiler.
-- calls_outgoing_to_abroad_count/spendings/duration/inactive_days → Yurtdışına yapılan çağrılar için bilgiler.
+- calls_outgoing_to_offnet_count/spendings/duration/inactive_days → Farklı operatör içi giden çağrıların sayısı, harcaması, süresi, en son yapılan çağrıdan bu yana geçen gün.
+- calls_outgoing_to_abroad_count/spendings/duration/inactive_days → Yurtdışına yapılan çağrıların sayısı, harcaması, süresi, en son yapılan çağrıdan bu yana geçen gün.
 
-- user_has_outgoing_sms → Kullanıcının giden SMS gönderip göndermediği.
+- user_has_outgoing_sms → Kullanıcının SMS gönderip göndermediği.
 - sms_outgoing_count/spendings/spendings_max/inactive_days → Toplam gönderilen SMS sayısı, harcama, maksimum harcama ve en son SMS’ten bu yana geçen gün.
 - sms_outgoing_to_onnet_count/spendings/inactive_days → Aynı operatör içi SMS’lerin bilgileri.
 - sms_outgoing_to_offnet_count/spendings/inactive_days → Farklı operatörlere gönderilen SMS’ler.
